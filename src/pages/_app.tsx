@@ -14,8 +14,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <div className={manrope.className}>
       <Head>
         <link rel="shortcut icon" href="/logo.png" type="image/png" />
-        <meta name="theme-color" content="#AB9AFF" />
-        <meta name="msapplication-TileColor" content="#AB9AFF" />
+        <meta name="theme-color" content="#231940" />
+        <meta name="msapplication-TileColor" content="#231940" />
       </Head>
       <ThemeProvider theme={theme}>
         <>
@@ -28,10 +28,10 @@ export default function App({ Component, pageProps }: AppProps) {
 }
 
 const theme: DefaultTheme = {
-  accent: "171, 154, 255",
-  background: "255, 255, 255",
-  primaryText: "0, 0, 0",
-  secondaryText: "73, 68, 100"
+  accent: "110, 120, 255",
+  background: "35, 25, 64",
+  primaryText: "255, 255, 255",
+  secondaryText: "193, 188, 207"
 };
 
 const GlobalStyles = createGlobalStyle`
@@ -41,6 +41,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     margin: 0;
+    background-color: rgb(${props => props.theme.background});
   }
 
   ::selection {
