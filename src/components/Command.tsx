@@ -10,7 +10,9 @@ export default function Command({ children }: PropsWithChildren<{}>) {
   return (
     <Wrapper>
       <Content>
-        {"$ "}
+        <span>
+          {"$ "}
+        </span>
         {children}
       </Content>
       <Copy onClick={() => copy(children as string)} />
@@ -35,6 +37,10 @@ const Content = styled.p`
   font-size: .9rem;
   color: rgba(255, 255, 255, .8);
   margin: 0;
+
+  span {
+    user-select: none;
+  }
 `;
 
 const Copy = styled(CopyIcon)`

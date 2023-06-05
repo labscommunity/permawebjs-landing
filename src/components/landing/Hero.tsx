@@ -2,11 +2,13 @@ import styled from "styled-components";
 import Command from "../Command";
 import Button from "../Button";
 import Image from "next/image";
+import Head from "../Head";
 import Nav from "../Nav";
 
 export default function Hero() {
   return (
     <Wrapper>
+      <Head />
       <Nav />
       <Content>
         <Title>
@@ -16,11 +18,15 @@ export default function Hero() {
           Leverage the power of the Arweave ecosystem<br/>to build quickly and simply on the permaweb. 
         </Subtitle>
         <GetStarted>
-          <Button>
+          <Button
+            href="https://docs.permawebjs.dev"
+            target="_blank"
+            rel="noopener noreferer"
+          >
             Get Started
           </Button>
           <Command>
-            npm install permawebjs
+            npm install arweave-kit
           </Command>
         </GetStarted>
         <Glow />
