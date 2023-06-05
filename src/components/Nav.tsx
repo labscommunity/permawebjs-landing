@@ -21,7 +21,7 @@ const Wrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 8vw;
+  padding: 1rem 8vw 0;
 `;
 
 const Logo = styled(Image).attrs({

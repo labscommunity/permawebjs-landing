@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Command from "../Command";
 import Button from "../Button";
+import Image from "next/image";
 import Nav from "../Nav";
 
 export default function Hero() {
@@ -24,6 +25,8 @@ export default function Hero() {
         </GetStarted>
         <Glow />
         <Glow2 />
+        <TopWeb src="/top-web.png" width={2880} height={632} />
+        <BottomWeb src="/bottom-web.png" width={2880} height={730} />
       </Content>
     </Wrapper>
   );
@@ -43,7 +46,6 @@ const Content = styled.section`
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
-  z-index: 2;
 `;
 
 const Title = styled.h1`
@@ -79,7 +81,7 @@ const Glow = styled.div`
   padding-top: 10.5%;
   background-color: rgba(${props => props.theme.accent}, .5);
   filter: blur(120px);
-  z-index: -2;
+  z-index: -4;
   transform: translate(-50%, -50%);
 `;
 
@@ -88,5 +90,26 @@ const Glow2 = styled(Glow)`
   background: rgba(255, 191, 255, .3);
   mix-blend-mode: hard-light;
   filter: blur(100px);
+  z-index: -3;
+`;
+
+const TopWeb = styled(Image).attrs({
+  alt: "",
+  draggable: false
+})`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: contain;
+  user-select: none;
+  z-index: -2;
+  transform: translateY(-30%);
+`;
+
+const BottomWeb = styled(TopWeb)`
+  top: unset;
+  bottom: 0;
   z-index: -1;
+  transform: translateY(30%);
 `;

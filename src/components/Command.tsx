@@ -2,6 +2,7 @@ import { IBM_Plex_Mono } from "next/font/google";
 import { CopyIcon } from "@iconicicons/react";
 import { PropsWithChildren } from "react";
 import styled from "styled-components";
+import copy from "copy-to-clipboard";
 
 const CodeFont = IBM_Plex_Mono({ subsets: ["latin"], weight: "400" });
 
@@ -12,7 +13,7 @@ export default function Command({ children }: PropsWithChildren<{}>) {
         {"$ "}
         {children}
       </Content>
-      <Copy />
+      <Copy onClick={() => copy(children as string)} />
     </Wrapper>
   );
 }
