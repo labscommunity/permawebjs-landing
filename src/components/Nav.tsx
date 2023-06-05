@@ -32,4 +32,8 @@ const Logo = styled(Image).attrs({
   height: 2rem;
   object-fit: contain;
   user-select: none;
+
+  @media screen and (max-width: 720px) {
+    opacity: 0;
+  }
 `;

@@ -52,6 +52,10 @@ const Content = styled.section`
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
+
+  @media screen and (max-width: 720px) {
+    gap: 1.6rem;
+  }
 `;
 
 const Title = styled.h1`
@@ -61,6 +65,10 @@ const Title = styled.h1`
   margin: 0;
   font-weight: 650;
   line-height: 1.2em;
+
+  @media screen and (max-width: 720px) {
+    font-size: 2.35rem;
+  }
 `;
 
 const Subtitle = styled.p`
@@ -69,6 +77,10 @@ const Subtitle = styled.p`
   text-align: center;
   margin: 0;
   font-weight: 500;
+
+  @media screen and (max-width: 720px) {
+    font-size: 1.05rem;
+  }
 `;
 
 const GetStarted = styled.div`
@@ -76,6 +88,13 @@ const GetStarted = styled.div`
   align-items: center;
   gap: 1.2rem;
   padding-top: .4rem;
+
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 2rem;
+    gap: 1rem;
+  }
 `;
 
 const Glow = styled.div`
@@ -89,6 +108,10 @@ const Glow = styled.div`
   filter: blur(120px);
   z-index: -4;
   transform: translate(-50%, -50%);
+
+  @media screen and (max-width: 720px) {
+    filter: blur(70px);
+  }
 `;
 
 const Glow2 = styled(Glow)`
@@ -97,6 +120,10 @@ const Glow2 = styled(Glow)`
   mix-blend-mode: hard-light;
   filter: blur(100px);
   z-index: -3;
+
+  @media screen and (max-width: 720px) {
+    filter: blur(50px);
+  }
 `;
 
 const TopWeb = styled(Image).attrs({
@@ -111,6 +138,12 @@ const TopWeb = styled(Image).attrs({
   user-select: none;
   z-index: -2;
   transform: translateY(-30%);
+
+  @media screen and (max-width: 720px) {
+    width: 300%;
+    left: 50%;
+    transform: translate(-50%, -30%)
+  }
 `;
 
 const BottomWeb = styled(TopWeb)`
@@ -118,4 +151,8 @@ const BottomWeb = styled(TopWeb)`
   bottom: 0;
   z-index: -1;
   transform: translateY(30%);
+
+  @media screen and (max-width: 720px) {
+    transform: translate(-50%, 30%)
+  }
 `;

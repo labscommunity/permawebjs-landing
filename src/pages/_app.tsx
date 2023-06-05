@@ -42,6 +42,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     background-color: rgb(${props => props.theme.background});
+    overflow-x: hidden;
   }
 
   ::selection {
