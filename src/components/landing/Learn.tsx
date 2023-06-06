@@ -6,7 +6,7 @@ import Card from "../Card";
 
 export default function Learn() {
   return (
-    <Wrapper>
+    <Wrapper id="learn">
       <TitleSection>
         <Title>
           Learn about library functions
@@ -78,12 +78,21 @@ const ContentCard = styled(Card)`
   width: calc(100% - 2 * 3.2rem);
   padding: 3.2rem;
   gap: 2.8rem;
+
+  @media screen and (max-width: 720px) {
+    width: calc(100% - 2 * 1.5rem);
+    padding: 1.5rem;
+  }
 `;
 
 const Step = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3.2rem;
+
+  @media screen and (max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const StepTitle = styled.h3`

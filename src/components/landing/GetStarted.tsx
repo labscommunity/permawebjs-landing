@@ -10,13 +10,15 @@ export default function GetStarted() {
         Getting started is easy as 1,2,3...
       </Title>
       <Steps>
-        <Step>
-          <GlobeIcon />
-          <StepTitle>
-            Learn
-          </StepTitle>
-          <StepScrollIndicator />
-        </Step>
+        <a href="#learn">
+          <Step>
+            <GlobeIcon />
+            <StepTitle>
+              Learn
+            </StepTitle>
+            <StepScrollIndicator />
+          </Step>
+        </a>
         <Separator />
         <Step>
           <GlobeIcon />
@@ -54,6 +56,11 @@ const Steps = styled.div`
   @media screen and (max-width: 720px) {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
   }
 `;
 
