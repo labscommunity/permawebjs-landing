@@ -1,6 +1,7 @@
 import { ArrowDownIcon, GlobeIcon } from "@iconicicons/react";
-import styled from "styled-components"
-import Card from "../Card"
+import styled from "styled-components";
+import Title from "../section/Title";
+import Card from "../Card";
 
 export default function GetStarted() {
   return (
@@ -54,15 +55,6 @@ const Steps = styled.div`
     flex-direction: column;
     gap: 2rem;
   }
-`;
-
-const Title = styled.h2`
-  font-size: 2.5rem;
-  color: rgb(${props => props.theme.primaryText});
-  text-align: center;
-  margin: 0;
-  font-weight: 600;
-  line-height: 1.2em;
 `;
 
 const Step = styled(Card)`
