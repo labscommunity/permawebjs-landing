@@ -1,3 +1,4 @@
+import ExternalLinks from "~/components/landing/ExternalLinks";
 import GetStarted from "~/components/landing/GetStarted";
 import Learn from "~/components/landing/Learn";
 import Hero from "~/components/landing/Hero";
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <GetStarted />
       <Learn />
+      <ExternalLinks />
     </Main>
   );
 }
