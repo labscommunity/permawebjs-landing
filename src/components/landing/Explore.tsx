@@ -7,7 +7,7 @@ import App from "../App"
 
 export default function Explore() {
   return (
-    <Wrapper>
+    <Wrapper id="explore">
       <TitleSection>
         <Title>
           Explore arweave

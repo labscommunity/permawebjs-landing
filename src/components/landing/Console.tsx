@@ -5,7 +5,7 @@ import Editor from "../Editor";
 
 export default function Console() {
   return (
-    <Wrapper>
+    <Wrapper id="build">
       <TitleSection>
         <Title>
           A one stop shop, without confusion

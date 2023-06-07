@@ -1,4 +1,4 @@
-import { ArrowDownIcon, GlobeIcon } from "@iconicicons/react";
+import { ArrowDownIcon, GlobeIcon, PlugIcon, SearchIcon } from "@iconicicons/react";
 import styled from "styled-components";
 import Title from "../section/Title";
 import Card from "../Card";
@@ -12,7 +12,7 @@ export default function GetStarted() {
       <Steps>
         <a href="#learn">
           <Step>
-            <GlobeIcon />
+            <SearchIcon />
             <StepTitle>
               Learn
             </StepTitle>
@@ -22,7 +22,7 @@ export default function GetStarted() {
         <Separator />
         <a href="#build">
           <Step>
-            <GlobeIcon />
+            <PlugIcon />
             <StepTitle>
               Build
             </StepTitle>
