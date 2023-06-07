@@ -7,6 +7,7 @@ import Discord from "~/components/landing/Discord";
 import Github from "~/components/landing/Github";
 import Learn from "~/components/landing/Learn";
 import Hero from "~/components/landing/Hero";
+import Footer from "~/components/Footer";
 import styled from "styled-components";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Explore />
       <Github />
       <Discord />
+      <Footer />
     </Main>
   );
 }
