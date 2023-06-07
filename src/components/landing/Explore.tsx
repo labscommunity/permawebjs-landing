@@ -3,6 +3,7 @@ import { Link, LinkIcon, LinkTitle } from "./ExternalLinks";
 import Title, { TitleSection } from "../section/Title";
 import Subtitle from "../section/Subtitle";
 import styled from "styled-components";
+import App from "../App"
 
 export default function Explore() {
   return (
@@ -52,7 +53,26 @@ export default function Explore() {
           Featured Arweave dApps, explore the full list <a href="https://list.weavescan.com" target="_blank" rel="noopener noreferer">here</a>.
         </SectionDescription>
       </div>
-
+      <Cards>
+        <App
+          icon="/logo.png"
+          name="App name"
+          description="This is an example description for an application. I have to write something else here to fill the space lol. We need something here..."
+          tags={["Tag", "Tag", "Tag"]}
+        />
+        <App
+          icon="/logo.png"
+          name="App name"
+          description="This is an example description for an application. I have to write something else here to fill the space lol. We need something here..."
+          tags={["Tag", "Tag", "Tag"]}
+        />
+        <App
+          icon="/logo.png"
+          name="App name"
+          description="This is an example description for an application. I have to write something else here to fill the space lol. We need something here..."
+          tags={["Tag", "Tag", "Tag"]}
+        />
+      </Cards>
     </Wrapper>
   );
 }
@@ -99,5 +119,5 @@ const Cards = styled.div`
 `;
 
 const LargeLink = styled(Link)`
-  padding: 3rem 0;
+  padding: 3.5rem 0;
 `;

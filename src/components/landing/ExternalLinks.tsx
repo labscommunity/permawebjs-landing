@@ -5,7 +5,7 @@ import Card from "../Card";
 export default function ExternalLinks() {
   return (
     <Wrapper>
-      <a href="https://docs.permawebjs.dev/wallets/introduction" target="_blank" rel="noopener noreferer">
+      <a href="https://docs.arweavekit.com/wallets/introduction" target="_blank" rel="noopener noreferer">
         <Link>
           <LinkIcon />
           <WalletIcon />
@@ -14,7 +14,7 @@ export default function ExternalLinks() {
           </LinkTitle>
         </Link>
       </a>
-      <a href="https://docs.permawebjs.dev/transactions/introduction" target="_blank" rel="noopener noreferer">
+      <a href="https://docs.arweavekit.com/transactions/introduction" target="_blank" rel="noopener noreferer">
         <Link>
           <LinkIcon />
           <WalletIcon />
@@ -23,7 +23,7 @@ export default function ExternalLinks() {
           </LinkTitle>
         </Link>
       </a>
-      <a href="https://docs.permawebjs.dev/smart-contracts/introduction-to-smart-contracts" target="_blank" rel="noopener noreferer">
+      <a href="https://docs.arweavekit.com/smart-contracts/introduction-to-smart-contracts" target="_blank" rel="noopener noreferer">
         <Link>
           <LinkIcon />
           <WalletIcon />
@@ -32,7 +32,7 @@ export default function ExternalLinks() {
           </LinkTitle>
         </Link>
       </a>
-      <a href="https://docs.permawebjs.dev/auth/introduction-to-auth" target="_blank" rel="noopener noreferer">
+      <a href="https://docs.arweavekit.com/auth/introduction-to-auth" target="_blank" rel="noopener noreferer">
         <Link>
           <LinkIcon />
           <WalletIcon />

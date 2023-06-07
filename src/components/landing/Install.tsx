@@ -20,7 +20,7 @@ export default function Install() {
           <Button href="get-started">
             Get Started
           </Button>
-          <Button href="https://docs.permawebjs.dev" secondary target="_blank" rel="noopener noreferer">
+          <Button href="https://docs.arweavekit.com" secondary target="_blank" rel="noopener noreferer">
             Explore the Docs
           </Button>
         </Buttons>

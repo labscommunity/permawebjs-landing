@@ -30,8 +30,8 @@ export default function Learn() {
           </div>
           <Editor hideBg>
             {`npm install arweavekit
-            # or
-            yarn add arweavekit`}
+# or
+yarn add arweavekit`}
           </Editor>
         </Step>
         <Step>
@@ -47,7 +47,7 @@ export default function Learn() {
             </StepDescription>
           </div>
           <Editor hideBg>
-            {`import { createWallet } from "permawebjs/wallet";
+            {`import { createWallet } from "arweavekit/wallet";
 
 const wallet = await createWallet();`}
           </Editor>

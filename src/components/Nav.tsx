@@ -7,7 +7,7 @@ export default function Nav() {
     <Wrapper>
       <Logo src="/logo.png" width={512} height={512} />
       <Button
-        href="https://docs.permawebjs.dev"
+        href="https://docs.arweavekit.com"
         target="_blank"
         rel="noopener noreferer"
       >

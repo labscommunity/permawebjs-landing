@@ -20,7 +20,7 @@ export default function Hero() {
         </Subtitle>
         <GetStarted>
           <Button
-            href="https://docs.permawebjs.dev"
+            href="https://docs.arweavekit.com"
             target="_blank"
             rel="noopener noreferer"
           >

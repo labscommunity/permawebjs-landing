@@ -15,7 +15,7 @@ export default function Console() {
         </Subtitle>
       </TitleSection>
       <Editor>
-        {`import { createTransaction } from "permawebjs/transaction";
+        {`import { createTransaction } from "arweavekit/transaction";
 
 const transaction = await createTransaction({
   key: { KEY_OBJECT },
