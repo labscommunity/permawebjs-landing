@@ -29,4 +29,8 @@ export default function Home() {
 
 const Main = styled.main`
   position: relative;
+
+  @media screen and (max-width: 720px) {
+    overflow-x: hidden;
+  }
 `;

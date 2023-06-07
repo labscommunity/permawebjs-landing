@@ -43,6 +43,10 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
+
+  @media screen and (max-width: 720px) {
+    overflow: hidden;
+  }
 `;
 
 const Content = styled.section`
