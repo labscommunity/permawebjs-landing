@@ -13,4 +13,12 @@ const Title = styled.h2`
   }
 `;
 
+export const TitleSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  jutify-content: center;
+  align-items: center;
+  gap: 1rem;
+`;
+
 export default Title;

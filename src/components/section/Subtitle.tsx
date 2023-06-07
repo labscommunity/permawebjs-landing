@@ -6,9 +6,15 @@ const Subtitle = styled.p`
   text-align: center;
   margin: 0;
   font-weight: 450;
+  max-width: 40vw;
+
+  @media screen and (max-width: 1000px) {
+    max-width: 65vw;
+  }
 
   @media screen and (max-width: 720px) {
     font-size: 1.05rem;
+    max-width: unset;
   }
 `;
 

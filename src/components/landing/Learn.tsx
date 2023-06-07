@@ -1,6 +1,6 @@
 import Subtitle from "../section/Subtitle";
+import Title, { TitleSection } from "../section/Title";
 import styled from "styled-components";
-import Title from "../section/Title";
 import Editor from "../Editor";
 import Card from "../Card";
 
@@ -12,7 +12,7 @@ export default function Learn() {
           Learn about library functions
         </Title>
         <Subtitle>
-          Permaweb.js combines tools and resources into one easy to use<br />library, to get started building with Arweave. 
+          Arweave Kit combines tools and resources into one easy to use library, to get started building with Arweave. 
         </Subtitle>
       </TitleSection>
       <ContentCard>
@@ -63,13 +63,6 @@ const Wrapper = styled.section`
   jutify-content: center;
   gap: 4.5rem;
   padding: 3rem 8vw;
-`;
-
-const TitleSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  jutify-content: center;
-  gap: 1rem;
 `;
 
 const ContentCard = styled(Card)`

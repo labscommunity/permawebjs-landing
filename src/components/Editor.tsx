@@ -54,6 +54,10 @@ const LineCount = styled(Content)`
   background: rgba(255, 255, 255, 0.05);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   user-select: none;
+
+  span {
+    text-align: center;
+  }
 `;
 
 const LineNumber = styled.span`
@@ -62,6 +66,7 @@ const LineNumber = styled.span`
   height: 1.3em;
   font-weight: 600;
   color: rgba(255, 255, 255, .2);
+  white-space: nowrap;
 `;
 
 const Line = styled(LineNumber)`
