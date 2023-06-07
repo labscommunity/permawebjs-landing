@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Button = styled.a`
+const Button = styled.a<{ secondary?: boolean; }>`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -11,8 +11,8 @@ const Button = styled.a`
   gap: 8px;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, .15);
-  color: rgb(${props => props.theme.primaryText});
-  background-color: rgb(${props => props.theme.accent});
+  color: rgb(${props => !props.secondary ? props.theme.primaryText : props.theme.accent});
+  background-color: rgb(${props => !props.secondary ? props.theme.accent : "255, 255, 255"});
   border: none;
   outline: none;
   cursor: pointer;

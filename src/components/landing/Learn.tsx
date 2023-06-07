@@ -62,7 +62,7 @@ const Wrapper = styled.section`
   flex-direction: column;
   jutify-content: center;
   gap: 4.5rem;
-  padding: 3rem 8vw;
+  padding: 3.5rem 8vw;
 `;
 
 const ContentCard = styled(Card)`

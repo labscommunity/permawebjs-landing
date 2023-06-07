@@ -49,7 +49,7 @@ const Wrapper = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2.75rem;
-  padding: 3rem 8vw;
+  padding: 3.5rem 8vw;
 
   a {
     display: block;

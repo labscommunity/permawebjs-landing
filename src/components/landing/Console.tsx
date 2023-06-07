@@ -36,7 +36,7 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
-  padding: 3rem 14vw;
+  padding: 3.5rem 14vw;
 
   @media screen and (max-width: 720px) {
     padding: 3rem 8vw;

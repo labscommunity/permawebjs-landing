@@ -5,7 +5,7 @@ import Card from "../Card";
 
 export default function GetStarted() {
   return (
-    <Wrapper>
+    <Wrapper id="get-started">
       <Title>
         Getting started is easy as 1,2,3...
       </Title>
@@ -20,21 +20,25 @@ export default function GetStarted() {
           </Step>
         </a>
         <Separator />
-        <Step>
-          <GlobeIcon />
-          <StepTitle>
-            Build
-          </StepTitle>
-          <StepScrollIndicator />
-        </Step>
+        <a href="#build">
+          <Step>
+            <GlobeIcon />
+            <StepTitle>
+              Build
+            </StepTitle>
+            <StepScrollIndicator />
+          </Step>
+        </a>
         <Separator />
-        <Step>
-          <GlobeIcon />
-          <StepTitle>
-            Explore
-          </StepTitle>
-          <StepScrollIndicator />
-        </Step>
+        <a href="#explore">
+          <Step>
+            <GlobeIcon />
+            <StepTitle>
+              Explore
+            </StepTitle>
+            <StepScrollIndicator />
+          </Step>
+        </a>
       </Steps>
     </Wrapper>
   );
