@@ -14,7 +14,7 @@ export default function Discord() {
           Arweave Kit is open source, and always will be. Connect with other builders and get support from the community.
         </Subtitle>
       </TitleSection>
-      <Button>
+      <Button href="https://discord.gg/XG3jTcVC" target="_blank" rel="noopener noreferer">
         <DiscordIcon />
         Discord
       </Button>

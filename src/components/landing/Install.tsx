@@ -17,7 +17,7 @@ export default function Install() {
           Unlocking the power of the Permaweb starts with you, let's build.
         </Subtitle>
         <Buttons>
-          <Button href="get-started">
+          <Button href="#get-started">
             Get Started
           </Button>
           <Button href="https://docs.arweavekit.com" secondary target="_blank" rel="noopener noreferer">

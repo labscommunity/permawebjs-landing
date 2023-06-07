@@ -23,27 +23,33 @@ export default function Explore() {
         </SectionDescription>
       </div>
       <Cards>
-        <LargeLink>
-          <LinkIcon />
-          <WalletIcon />
-          <LinkTitle>
-            Setup a Wallet
-          </LinkTitle>
-        </LargeLink>
-        <LargeLink>
-          <LinkIcon />
-          <GlobeIcon />
-          <LinkTitle>
-            Explore the Wiki
-          </LinkTitle>
-        </LargeLink>
-        <LargeLink>
-          <LinkIcon />
-          <FileIcon />
-          <LinkTitle>
-            Save a file forever
-          </LinkTitle>
-        </LargeLink>
+        <a href="https://arconnect.io" target="_blank" rel="noopener noreferrer">
+          <LargeLink>
+            <LinkIcon />
+            <WalletIcon />
+            <LinkTitle>
+              Setup a Wallet
+            </LinkTitle>
+          </LargeLink>
+        </a>
+        <a href="https://arwiki.wiki" target="_blank" rel="noopener noreferrer">
+          <LargeLink>
+            <LinkIcon />
+            <GlobeIcon />
+            <LinkTitle>
+              Explore the Wiki
+            </LinkTitle>
+          </LargeLink>
+        </a>
+        <a href="https://ardrive.io" target="_blank" rel="noopener noreferrer">
+          <LargeLink>
+            <LinkIcon />
+            <FileIcon />
+            <LinkTitle>
+              Save a file forever
+            </LinkTitle>
+          </LargeLink>
+        </a>
       </Cards>
       <div>
         <SectionTitle>
@@ -54,24 +60,30 @@ export default function Explore() {
         </SectionDescription>
       </div>
       <Cards>
-        <App
-          icon="/logo.png"
-          name="App name"
-          description="This is an example description for an application. I have to write something else here to fill the space lol. We need something here..."
-          tags={["Tag", "Tag", "Tag"]}
-        />
-        <App
-          icon="/logo.png"
-          name="App name"
-          description="This is an example description for an application. I have to write something else here to fill the space lol. We need something here..."
-          tags={["Tag", "Tag", "Tag"]}
-        />
-        <App
-          icon="/logo.png"
-          name="App name"
-          description="This is an example description for an application. I have to write something else here to fill the space lol. We need something here..."
-          tags={["Tag", "Tag", "Tag"]}
-        />
+        <a href="https://akord.com" target="_blank" rel="noopener noreferrer">
+          <App
+            icon="/akord.png"
+            name="Akord"
+            description="Akord provides a seamless user experience for storing and publishing files on Arweave's blockchain."
+            tags={["Storage", "Permanent", "Files"]}
+          />
+        </a>
+        <a href="https://ardrive.io" target="_blank" rel="noopener noreferrer">
+          <App
+            icon="/ardrive.png"
+            name="ArDrive"
+            description="ArDrive offers never-ending storage of your most valuable files. Pay once and save your memories forever."
+            tags={["Storage", "Permanent", "Files"]}
+          />
+        </a>
+        <a href="https://permafacts.arweave.dev" target="_blank" rel="noopener noreferrer">
+          <App
+            icon="/permafacts.svg"
+            name="Permafacts"
+            description="A provably neutral publishing platform, built on top of the #FactsProtocol, aimed at dis-intermediating the truth."
+            tags={["Facts", "Social"]}
+          />
+        </a>
       </Cards>
     </Wrapper>
   );
@@ -115,6 +127,10 @@ const Cards = styled.div`
 
   @media screen and (max-width: 720px) {
     grid-template-columns: 1fr;
+  }
+
+  a {
+    text-decoration: none;
   }
 `;
 

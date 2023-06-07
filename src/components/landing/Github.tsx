@@ -10,7 +10,7 @@ export default function Github() {
           Join the Github Discussion and Share Your Ideas to Help Shape the Future of Arweave Kit
         </Title>
       </TitleSection>
-      <Button secondary>
+      <Button secondary href="https://github.com/labscommunity/arweavekit" target="_blank" rel="noopener noreferer">
         <GithubIcon />
         Contribute
       </Button>
