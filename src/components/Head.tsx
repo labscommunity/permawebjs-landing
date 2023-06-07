@@ -5,10 +5,13 @@ export default function Head({
   children,
   title = "Arweave Kit",
   description = "Leverage the power of the Arweave ecosystem to build quickly and simply on the permaweb.",
-  image = "https://arweave-kit.dev/og.png"
+  image = "https://arweavekit.com/og.png"
 }: PropsWithChildren<Props>) {
   return (
     <NextHead>
+      <link rel="shortcut icon" href="/logo.png" type="image/png" />
+      <meta name="theme-color" content="#231940" />
+      <meta name="msapplication-TileColor" content="#231940" />
       <meta name="description" content={description} />
       <title>{title}</title>
       <meta name="robots" content="index,follow" />
@@ -22,7 +25,7 @@ export default function Head({
 
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:url" content="https://arweave-kit.dev" />
+      <meta property="og:url" content="https://arweavekit.com" />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={image} />
       <meta property="og:image:alt" content={description} />

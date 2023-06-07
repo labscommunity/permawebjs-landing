@@ -27,7 +27,7 @@ export default function Hero() {
             Get Started
           </Button>
           <Command>
-            npm install arweave-kit
+            npm install arweavekit
           </Command>
         </GetStarted>
         <Glow />

@@ -12,11 +12,6 @@ const manrope = Manrope({ subsets: ["latin"] });
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className={manrope.className}>
-      <Head>
-        <link rel="shortcut icon" href="/logo.png" type="image/png" />
-        <meta name="theme-color" content="#231940" />
-        <meta name="msapplication-TileColor" content="#231940" />
-      </Head>
       <ThemeProvider theme={theme}>
         <>
           <GlobalStyles />

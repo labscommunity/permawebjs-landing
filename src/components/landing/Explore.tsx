@@ -49,10 +49,10 @@ export default function Explore() {
           Get Inspired
         </SectionTitle>
         <SectionDescription>
-          Featured Arweave dApps, explore the full list <a href="https://list.weavescan.com">here</a>.
+          Featured Arweave dApps, explore the full list <a href="https://list.weavescan.com" target="_blank" rel="noopener noreferer">here</a>.
         </SectionDescription>
       </div>
-      
+
     </Wrapper>
   );
 }
@@ -92,6 +92,10 @@ const Cards = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
+
+  @media screen and (max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const LargeLink = styled(Link)`

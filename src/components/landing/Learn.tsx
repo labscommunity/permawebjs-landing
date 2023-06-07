@@ -29,9 +29,9 @@ export default function Learn() {
             </StepDescription>
           </div>
           <Editor hideBg>
-            {`npm install arweave-kit
+            {`npm install arweavekit
             # or
-            yarn add arweave-kit`}
+            yarn add arweavekit`}
           </Editor>
         </Step>
         <Step>
