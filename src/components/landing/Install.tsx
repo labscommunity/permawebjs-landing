@@ -62,4 +62,9 @@ const MechanismDisplay = styled(Image).attrs({
   height: calc(45vw / 100 * 80);
   object-fit: contain;
   user-select: none;
+
+  @media screen and (max-width: 720px) {
+    width: 90vw;
+    height: calc(90vw / 100 * 80);
+  }
 `;

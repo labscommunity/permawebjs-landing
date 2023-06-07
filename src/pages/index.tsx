@@ -1,5 +1,6 @@
 import ExternalLinks from "~/components/landing/ExternalLinks";
 import GetStarted from "~/components/landing/GetStarted";
+import Explore from "~/components/landing/Explore";
 import Install from "~/components/landing/Install";
 import Console from "~/components/landing/Console";
 import Learn from "~/components/landing/Learn";
@@ -15,6 +16,7 @@ export default function Home() {
       <ExternalLinks />
       <Console />
       <Install />
+      <Explore />
     </Main>
   );
 }

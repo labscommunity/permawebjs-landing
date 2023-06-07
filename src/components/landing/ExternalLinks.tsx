@@ -61,7 +61,7 @@ const Wrapper = styled.section`
   }
 `;
 
-const Link = styled(Card)`
+export const Link = styled(Card)`
   display: flex;
   position: relative;
   flex-direction: column;
@@ -89,7 +89,7 @@ const Link = styled(Card)`
   }
 `;
 
-const LinkTitle = styled.h3`
+export const LinkTitle = styled.h3`
   font-size: 1.25rem;
   font-weight: 450;
   color: rgb(${props => props.theme.primaryText});
@@ -97,7 +97,7 @@ const LinkTitle = styled.h3`
   margin: 0;
 `;
 
-const LinkIcon = styled(ShareIcon)`
+export const LinkIcon = styled(ShareIcon)`
   position: absolute;
   font-size: 1.4rem !important;
   color: rgb(${props => props.theme.secondaryText}) !important;
