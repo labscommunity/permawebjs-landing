@@ -7,15 +7,17 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <Wrapper>
-      <Title>
-        In collaboration with
-      </Title>
-      <a href="https://communitylabs.com" target="_blank" rel="noopener noreferer">
+      <Title>In collaboration with</Title>
+      <a
+        href="https://communitylabs.com"
+        target="_blank"
+        rel="noopener noreferer"
+      >
         <CLabs src="/clabs.png" width={1022} height={256} />
       </a>
       <Copyright>
-        Arweave Kit<br />
-        © 2023 All Rights Reserved
+        Arweave Kit
+        <br />© 2023 All Rights Reserved
       </Copyright>
       <BottomWeb />
       <Glow />
@@ -46,7 +48,7 @@ const CLabs = styled(Image).attrs({
 
 const Copyright = styled.p`
   font-size: 1rem;
-  color: rgb(${props => props.theme.secondaryText}, .8);
+  color: rgb(${(props) => props.theme.secondaryText}, 0.8);
   text-align: center;
   margin: 1rem;
   font-weight: 450;

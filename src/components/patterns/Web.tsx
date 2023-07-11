@@ -20,7 +20,7 @@ export const TopWeb = styled(Image).attrs({
   @media screen and (max-width: 720px) {
     width: 300%;
     left: 50%;
-    transform: translate(-50%, -30%)
+    transform: translate(-50%, -30%);
   }
 `;
 
@@ -35,6 +35,6 @@ export const BottomWeb = styled(TopWeb).attrs({
   transform: translateY(30%);
 
   @media screen and (max-width: 720px) {
-    transform: translate(-50%, 30%)
+    transform: translate(-50%, 30%);
   }
 `;

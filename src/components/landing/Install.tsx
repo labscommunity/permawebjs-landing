@@ -4,23 +4,24 @@ import { BottomWeb } from "../patterns/Web";
 import Subtitle from "../section/Subtitle";
 import styled from "styled-components";
 import Button from "../Button";
-import Image from "next/image"
+import Image from "next/image";
 
 export default function Install() {
   return (
     <Wrapper>
       <TitleSection>
-        <Title>
-          Install the library, and start building
-        </Title>
+        <Title>Install the library, and start building</Title>
         <Subtitle>
           Unlocking the power of the Permaweb starts with you, let's build.
         </Subtitle>
         <Buttons>
-          <Button href="#get-started">
-            Get Started
-          </Button>
-          <Button href="https://docs.arweavekit.com" secondary target="_blank" rel="noopener noreferer">
+          <Button href="#get-started">Get Started</Button>
+          <Button
+            href="https://docs.arweavekit.com"
+            secondary
+            target="_blank"
+            rel="noopener noreferer"
+          >
             Explore the Docs
           </Button>
         </Buttons>

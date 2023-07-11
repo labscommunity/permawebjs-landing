@@ -1,4 +1,9 @@
-import { ArrowDownIcon, GlobeIcon, PlugIcon, SearchIcon } from "@iconicicons/react";
+import {
+  ArrowNarrowDown,
+  Glasses02,
+  Telescope,
+  Tool02
+} from "@untitled-ui/icons-react";
 import styled from "styled-components";
 import Title from "../section/Title";
 import Card from "../Card";
@@ -6,36 +11,28 @@ import Card from "../Card";
 export default function GetStarted() {
   return (
     <Wrapper id="get-started">
-      <Title>
-        Getting started is easy as 1,2,3...
-      </Title>
+      <Title>Getting started is easy as 1,2,3...</Title>
       <Steps>
         <a href="#learn">
           <Step>
-            <SearchIcon />
-            <StepTitle>
-              Learn
-            </StepTitle>
+            <Glasses02 viewBox="0 0 24 24" />
+            <StepTitle>Learn</StepTitle>
             <StepScrollIndicator />
           </Step>
         </a>
         <Separator />
         <a href="#build">
           <Step>
-            <PlugIcon />
-            <StepTitle>
-              Build
-            </StepTitle>
+            <Tool02 viewBox="0 0 24 24" />
+            <StepTitle>Build</StepTitle>
             <StepScrollIndicator />
           </Step>
         </a>
         <Separator />
         <a href="#explore">
           <Step>
-            <GlobeIcon />
-            <StepTitle>
-              Explore
-            </StepTitle>
+            <Telescope viewBox="0 0 24 24" />
+            <StepTitle>Explore</StepTitle>
             <StepScrollIndicator />
           </Step>
         </a>
@@ -73,12 +70,12 @@ const Step = styled(Card)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: .55rem;
+  gap: 0.55rem;
   width: 7rem;
   height: 7rem;
   box-shadow: none;
   cursor: pointer;
-  transition: all .23s ease-in-out;
+  transition: all 0.23s ease-in-out;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -89,8 +86,8 @@ const Step = styled(Card)`
   }
 
   svg {
-    font-size: 2.3rem;
-    color: rgb(${props => props.theme.primaryText});
+    font-size: 2.18rem;
+    color: rgb(${(props) => props.theme.primaryText});
     width: 1em;
     height: 1em;
   }
@@ -99,18 +96,18 @@ const Step = styled(Card)`
 const StepTitle = styled.h3`
   font-size: 1.3rem;
   font-weight: 500;
-  color: rgb(${props => props.theme.primaryText});
+  color: rgb(${(props) => props.theme.primaryText});
   text-align: center;
   margin: 0;
 `;
 
-const StepScrollIndicator = styled(ArrowDownIcon)`
+const StepScrollIndicator = styled(ArrowNarrowDown)`
   font-size: 1.45rem !important;
 `;
 
 const Separator = styled.div`
   width: 4.5rem;
-  border: 1px solid rgba(255, 255, 255, .8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
 
   @media screen and (max-width: 720px) {
     width: unset;

@@ -1,62 +1,67 @@
-import { FileIcon, GlobeIcon, WalletIcon } from "@iconicicons/react";
+import { File06, FileSearch02, Wallet01 } from "@untitled-ui/icons-react";
 import { Link, LinkIcon, LinkTitle } from "./ExternalLinks";
 import Title, { TitleSection } from "../section/Title";
 import Subtitle from "../section/Subtitle";
 import styled from "styled-components";
-import App from "../App"
+import App from "../App";
 
 export default function Explore() {
   return (
     <Wrapper id="explore">
       <TitleSection>
-        <Title>
-          Explore arweave
-        </Title>
+        <Title>Explore arweave</Title>
       </TitleSection>
       <div>
         <SectionTitle>
-          Built on Arweave:<br />
+          Built on Arweave:
+          <br />
           Permanent information storage
         </SectionTitle>
         <SectionDescription>
-          Permanent storage has many applications: from the preservation of humanity's most important data, to the hosting of truly decentralized and provably neutral web apps.
+          Permanent storage has many applications: from the preservation of
+          humanity's most important data, to the hosting of truly decentralized
+          and provably neutral web apps.
         </SectionDescription>
       </div>
       <Cards>
-        <a href="https://arconnect.io" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://arconnect.io"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <LargeLink>
-            <LinkIcon />
-            <WalletIcon />
-            <LinkTitle>
-              Setup a Wallet
-            </LinkTitle>
+            <LinkIcon viewBox="0 0 24 24" />
+            <Wallet01 viewBox="0 0 24 24" />
+            <LinkTitle>Setup a Wallet</LinkTitle>
           </LargeLink>
         </a>
         <a href="https://arwiki.wiki" target="_blank" rel="noopener noreferrer">
           <LargeLink>
-            <LinkIcon />
-            <GlobeIcon />
-            <LinkTitle>
-              Explore the Wiki
-            </LinkTitle>
+            <LinkIcon viewBox="0 0 24 24" />
+            <FileSearch02 viewBox="0 0 24 24" />
+            <LinkTitle>Explore the Wiki</LinkTitle>
           </LargeLink>
         </a>
         <a href="https://ardrive.io" target="_blank" rel="noopener noreferrer">
           <LargeLink>
-            <LinkIcon />
-            <FileIcon />
-            <LinkTitle>
-              Save a file forever
-            </LinkTitle>
+            <LinkIcon viewBox="0 0 24 24" />
+            <File06 viewBox="0 0 24 24" />
+            <LinkTitle>Save a file forever</LinkTitle>
           </LargeLink>
         </a>
       </Cards>
       <div>
-        <SectionTitle>
-          Get Inspired
-        </SectionTitle>
+        <SectionTitle>Get Inspired</SectionTitle>
         <SectionDescription>
-          Featured Arweave dApps, explore the full list <a href="https://list.weavescan.com" target="_blank" rel="noopener noreferer">here</a>.
+          Featured Arweave dApps, explore the full list{" "}
+          <a
+            href="https://list.weavescan.com"
+            target="_blank"
+            rel="noopener noreferer"
+          >
+            here
+          </a>
+          .
         </SectionDescription>
       </div>
       <Cards>
@@ -76,7 +81,11 @@ export default function Explore() {
             tags={["Storage", "Permanent", "Files"]}
           />
         </a>
-        <a href="https://permafacts.arweave.dev" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://permafacts.arweave.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <App
             icon="/permafacts.svg"
             name="Permafacts"
@@ -98,7 +107,7 @@ const Wrapper = styled.section`
 
 const SectionTitle = styled.h3`
   font-size: 2.4rem;
-  color: rgb(${props => props.theme.primaryText});
+  color: rgb(${(props) => props.theme.primaryText});
   text-align: left;
   margin: 0 0 1rem;
   font-weight: 600;

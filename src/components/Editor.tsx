@@ -1,4 +1,4 @@
-import { ClipboardIcon } from "@iconicicons/react";
+import { Copy06 } from "@untitled-ui/icons-react";
 import { IBM_Plex_Mono } from "next/font/google";
 import styled from "styled-components";
 import copy from "copy-to-clipboard";
@@ -11,21 +11,17 @@ export default function Editor({ children, hideBg = false }: Props) {
     <Wrapper hideBg={hideBg}>
       <LineCount>
         {new Array(children.split("\n").length + 3).fill("").map((_, i) => (
-          <LineNumber key={i}>
-            {i + 1}
-          </LineNumber>
+          <LineNumber key={i}>{i + 1}</LineNumber>
         ))}
       </LineCount>
       <Content>
         {children.split("\n").map((val, i) => (
-          <Line key={i}>
-            {val}
-          </Line>
+          <Line key={i}>{val}</Line>
         ))}
       </Content>
       <CopyButton onClick={() => copy(children)}>
         Copy
-        <ClipboardIcon />
+        <Copy06 viewBox="0 0 24 24" />
       </CopyButton>
     </Wrapper>
   );
@@ -37,16 +33,16 @@ const Wrapper = styled(Card)<{ hideBg: boolean }>`
   padding: 0;
   overflow: hidden;
   border-radius: 12px;
-  ${props => props.hideBg && "background-color: transparent;"}
+  ${(props) => props.hideBg && "background-color: transparent;"}
   ${CodeFont.style};
 `;
 
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-  gap: .4rem;
+  gap: 0.4rem;
   overflow-x: auto;
-  padding: .65rem .8rem;
+  padding: 0.65rem 0.8rem;
 `;
 
 const LineCount = styled(Content)`
@@ -64,7 +60,7 @@ const LineNumber = styled.span`
   line-height: 1.3em;
   height: 1.3em;
   font-weight: 600;
-  color: rgba(255, 255, 255, .2);
+  color: rgba(255, 255, 255, 0.2);
   white-space: pre;
 `;
 
@@ -80,26 +76,25 @@ const CopyButton = styled.button`
   align-items: center;
   font-size: 1.05rem;
   font-weight: 400;
-  padding: .55rem .8rem;
-  gap: .5rem;
+  padding: 0.55rem 0.8rem;
+  gap: 0.5rem;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: rgba(${props => props.theme.primaryText}, .7);
+  color: rgba(${(props) => props.theme.primaryText}, 0.7);
   border-radius: 12px;
   cursor: pointer;
   outline: none;
-  bottom: .85rem;
-  right: .85rem;
-  transition: all .23s ease-in-out;
+  bottom: 0.85rem;
+  right: 0.85rem;
+  transition: all 0.23s ease-in-out;
 
   &:hover {
     background: rgba(255, 255, 255, 0.1);
   }
 
   svg {
-    font-size: 1.385em;
-    width: 1em;
-    height: 1em;
+    width: 1.15rem;
+    height: 1.15rem;
   }
 `;
 

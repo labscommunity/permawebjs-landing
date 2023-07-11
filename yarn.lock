@@ -84,6 +84,13 @@
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.22.4.tgz#a770e98fd785c231af9d93f6459d36770993fb32"
   integrity sha512-VLLsx06XkEYqBtE5YGPwfSGwfrjnyPP5oiGty3S8pQLFDFLaS8VwWSIxkTXpcvr5zeYLE6+MBNl2npl/YnfofA==
 
+"@babel/runtime@^7.22.6":
+  version "7.22.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.6.tgz#57d64b9ae3cff1d67eb067ae117dac087f5bd438"
+  integrity sha512-wDb5pWm4WDdF6LFUde3Jl8WzPA+3ZbxYqkC6xAXuD3irdEHN1k0NfTRrJD8ZD378SJ61miMLCqIOXYhd8x+AJQ==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@babel/template@^7.20.7":
   version "7.21.9"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.21.9.tgz#bf8dad2859130ae46088a99c1f265394877446fb"
@@ -151,11 +158,6 @@
   version "0.7.5"
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
-
-"@iconicicons/react@^1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@iconicicons/react/-/react-1.5.1.tgz#1ddb561dc51b5b65f8e8f98fdbc019327e658662"
-  integrity sha512-/Y23Y5NBBK7h/1/R8vTdHM0zwX9Yhk8L58QRhpD1Zu8heXDOz89Lqhzb8VQ1DAdYnd0vjfcGcQaUSgZQVbnlOw==
 
 "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
@@ -327,6 +329,11 @@
     "@types/hoist-non-react-statics" "*"
     "@types/react" "*"
     csstype "^3.0.2"
+
+"@untitled-ui/icons-react@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@untitled-ui/icons-react/-/icons-react-0.1.1.tgz#ae77dd4cbee8164129f857c3db34bc44dc031289"
+  integrity sha512-r46L5+Ak6UsyhcglPuC1+y5WkjDLi2dBeeUemYrtJn0pBfQM15IcAzErvh+yEts4hT2arGedcp3TnNhDVlUvDw==
 
 ansi-styles@^3.2.1:
   version "3.2.1"
@@ -766,6 +773,11 @@ readable-stream@^3.1.1, readable-stream@^3.4.0:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
+
+regenerator-runtime@^0.13.11:
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
 
 safe-buffer@^5.0.1, safe-buffer@~5.2.0:
   version "5.2.1"

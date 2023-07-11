@@ -6,7 +6,7 @@ import {
   DefaultTheme,
   createGlobalStyle
 } from "styled-components";
-import { useEffect } from "react"
+import { useEffect } from "react";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -42,7 +42,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     margin: 0;
-    background-color: rgb(${props => props.theme.background});
+    background-color: rgb(${(props) => props.theme.background});
     overflow-x: hidden;
   }
 

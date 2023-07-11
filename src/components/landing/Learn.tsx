@@ -8,24 +8,22 @@ export default function Learn() {
   return (
     <Wrapper id="learn">
       <TitleSection>
-        <Title>
-          Learn about library functions
-        </Title>
+        <Title>Learn about library functions</Title>
         <Subtitle>
-          Arweave Kit combines tools and resources into one easy to use library, to get started building with Arweave. 
+          Arweave Kit combines tools and resources into one easy to use library,
+          to get started building with Arweave.
         </Subtitle>
       </TitleSection>
       <ContentCard>
         <Step>
           <div>
             <StepTitle>
-              <StepNumber>
-                1
-              </StepNumber>
+              <StepNumber>1</StepNumber>
               Start
             </StepTitle>
             <StepDescription>
-              To begin using the library functions, install the package in the application.
+              To begin using the library functions, install the package in the
+              application.
             </StepDescription>
           </div>
           <Editor hideBg>
@@ -37,9 +35,7 @@ yarn add arweavekit`}
         <Step>
           <div>
             <StepTitle>
-              <StepNumber>
-                2
-              </StepNumber>
+              <StepNumber>2</StepNumber>
               Import
             </StepTitle>
             <StepDescription>
@@ -93,7 +89,7 @@ const StepTitle = styled.h3`
   align-items: center;
   gap: 1.3rem;
   font-size: 2.4rem;
-  color: rgb(${props => props.theme.primaryText});
+  color: rgb(${(props) => props.theme.primaryText});
   margin: 0 0 1.45rem;
   font-weight: 600;
   line-height: 1.2em;
@@ -105,9 +101,9 @@ const StepNumber = styled.span`
   justify-content: center;
   width: 3rem;
   height: 3rem;
-  background-color: rgb(${props => props.theme.primaryText});
-  color: rgb(${props => props.theme.background});
-  font-size: .6em;
+  background-color: rgb(${(props) => props.theme.primaryText});
+  color: rgb(${(props) => props.theme.background});
+  font-size: 0.6em;
   text-align: center;
   border-radius: 100%;
   line-height: 1em;

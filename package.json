@@ -6,7 +6,8 @@
     "fmt": "prettier . --write"
   },
   "dependencies": {
-    "@iconicicons/react": "^1.5.1",
+    "@babel/runtime": "^7.22.6",
+    "@untitled-ui/icons-react": "^0.1.1",
     "copy-to-clipboard": "^3.3.3",
     "framer-motion": "^10.8.5",
     "next": "13.2.4",

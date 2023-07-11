@@ -7,7 +7,7 @@ export const Glow = styled.div`
   user-select: none;
   width: 100%;
   padding-top: 10.5%;
-  background-color: rgba(${props => props.theme.accent}, .5);
+  background-color: rgba(${(props) => props.theme.accent}, 0.5);
   filter: blur(120px);
   z-index: -5;
   transform: translate(-50%, -50%);
@@ -19,7 +19,7 @@ export const Glow = styled.div`
 
 export const Glow2 = styled(Glow)`
   width: 60%;
-  background: rgba(255, 191, 255, .3);
+  background: rgba(255, 191, 255, 0.3);
   mix-blend-mode: hard-light;
   filter: blur(100px);
   z-index: -4;

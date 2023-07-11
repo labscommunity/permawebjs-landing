@@ -13,10 +13,14 @@ export default function Hero() {
       <Nav />
       <Content>
         <Title>
-          One-stop library for<br/>builders on Arweave
+          One-stop library for
+          <br />
+          builders on Arweave
         </Title>
         <Subtitle>
-          Leverage the power of the Arweave ecosystem<br/>to build quickly and simply on the permaweb. 
+          Leverage the power of the Arweave ecosystem
+          <br />
+          to build quickly and simply on the permaweb.
         </Subtitle>
         <GetStarted>
           <Button
@@ -26,9 +30,7 @@ export default function Hero() {
           >
             Get Started
           </Button>
-          <Command>
-            npm install arweavekit
-          </Command>
+          <Command>npm install arweavekit</Command>
         </GetStarted>
         <Glow />
         <Glow2 />
@@ -65,7 +67,7 @@ const Content = styled.section`
 
 const Title = styled.h1`
   font-size: 4rem;
-  color: rgb(${props => props.theme.primaryText});
+  color: rgb(${(props) => props.theme.primaryText});
   text-align: center;
   margin: 0;
   font-weight: 650;
@@ -78,7 +80,7 @@ const Title = styled.h1`
 
 const Subtitle = styled.p`
   font-size: 1.5rem;
-  color: rgb(${props => props.theme.secondaryText});
+  color: rgb(${(props) => props.theme.secondaryText});
   text-align: center;
   margin: 0;
   font-weight: 500;
@@ -92,7 +94,7 @@ const GetStarted = styled.div`
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  padding-top: .4rem;
+  padding-top: 0.4rem;
 
   @media screen and (max-width: 720px) {
     flex-direction: column;

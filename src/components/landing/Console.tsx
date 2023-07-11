@@ -7,11 +7,10 @@ export default function Console() {
   return (
     <Wrapper id="build">
       <TitleSection>
-        <Title>
-          A one stop shop, without confusion
-        </Title>
+        <Title>A one stop shop, without confusion</Title>
         <Subtitle>
-          Every function has a dedicated page with a breakdown of information to make your building process easier, try it yourself.
+          Every function has a dedicated page with a breakdown of information to
+          make your building process easier, try it yourself.
         </Subtitle>
       </TitleSection>
       <Editor>
@@ -43,4 +42,3 @@ const Wrapper = styled.section`
     padding: 3rem 8vw;
   }
 `;
-
