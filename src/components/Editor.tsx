@@ -7,7 +7,6 @@ import Card from "./Card";
 const CodeFont = IBM_Plex_Mono({ subsets: ["latin"], weight: "400" });
 
 export default function Editor({ children, hideBg = false }: Props) {
-  console.log(children.split("\n"))
   return (
     <Wrapper hideBg={hideBg}>
       <LineCount>
