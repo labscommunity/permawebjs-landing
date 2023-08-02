@@ -19,6 +19,13 @@ export default function Footer() {
         Arweave Kit
         <br />© 2023 All Rights Reserved
       </Copyright>
+      <PrivacyPolicy
+        target="_blank"
+        rel="noopener noreferer"
+        href="https://drive.google.com/file/d/15GnFqWS9YHUCK2tvaAR01Uor0S7q5RS2/view?pli=1"
+      >
+        Privacy Policy
+      </PrivacyPolicy>
       <BottomWeb />
       <Glow />
       <Glow2 />
@@ -34,6 +41,12 @@ const Wrapper = styled.footer`
   align-items: center;
   gap: 2.5rem;
   padding: 3.5rem 8vw;
+`;
+
+const PrivacyPolicy = styled.a`
+  color: rgb(${(props) => props.theme.secondaryText}, 0.8);
+  text-decoration: none;
+  cursor: pointer;
 `;
 
 const CLabs = styled(Image).attrs({
