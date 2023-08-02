@@ -22,12 +22,11 @@ export default function CookieConsent() {
     // opted out from analytics, it will never get
     // initialized
     if (!optedInGA) return;
-    // if (process.env.NODE_ENV === "development" || initializedGA) return;
+    if (process.env.NODE_ENV === "development" || initializedGA) return;
 
     // setup consent (no consent to cookies)
     consentGA("default", false);
     ReactGA.initialize(ANALYTICS_MEASUREMENT_ID);
-    console.log(ANALYTICS_MEASUREMENT_ID);
     setInitializedGA(true);
   }, [optedInGA]);
 
