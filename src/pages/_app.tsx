@@ -7,21 +7,18 @@ import {
   createGlobalStyle
 } from "styled-components";
 import { useEffect } from "react";
+import CookieConsent from "~/components/CookieConsent";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    // init analytics
-    ReactGA.initialize("G-XGL84RGTS6");
-  }, []);
-
   return (
     <div className={manrope.className}>
       <ThemeProvider theme={theme}>
         <>
           <GlobalStyles />
           <Component {...pageProps} />
+          <CookieConsent />
         </>
       </ThemeProvider>
     </div>
