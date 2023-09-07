@@ -5,7 +5,7 @@ import Button from "./Button";
 export default function Nav() {
   return (
     <Wrapper>
-      <Logo src="/logo.png" width={512} height={512} />
+      <a href="/"><Logo src="/logo.png" width={512} height={512} /></a>
       <Button
         href="https://docs.arweavekit.com"
         target="_blank"

@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Othent",
+        "logo": "https://othent.io/favicon.png",
+        "description": "Web3 transactions with existing traditional social logins.",
+        "websiteLink": "https://othent.io",
+        "githubRepo": "othent/package",
+        "primaryColor": "#2375ef"
+    },
+    {
+        "name": "ArConnect",
+        "logo": "https://www.arconnect.io/_next/image?url=%2Flogo.png&w=1080&q=75",
+        "description": "A non-custodial Arweave-native wallet with extensive features, all in your favorite browser.",
+        "websiteLink": "https://arconnect.io",
+        "githubRepo": "arconnectio/ArConnect",
+        "primaryColor": "#ab9aff"
+    },
+    {
+        "name": "Redstone",
+        "logo": "https://ava- tars.githubusercontent.com/u/84323205?s=200&v=4",
+        "description": "RedStone delivers data you need at high-frequency and inherited security of the destination chain.",
+        "websiteLink": "https://redstone.finance/",
+        "githubRepo": "redstone-finance/redstone-oracles-monorepo",
+        "primaryColor": "#fd627a"
+    },
+    {
+        "name": "Arweave-JS",
+        "logo": "https://cryptologos.cc/logos/arweave-ar-logo.png",
+        "description": "Arweave JS is the JavaScript/TypeScript SDK for interacting with the Arweave network.",
+        "websiteLink": "https://github.com/ArweaveTeam/arweave-js",
+        "githubRepo": "ArweaveTeam/arweave-js",
+        "primaryColor": "#222326"
+    },
+    {
+        "name": "Bundlr",
+        "logo": "https://images.crunchbase.com/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/b82j0loz1jz8rjg5byc3",
+        "description": "Performant, scalable, and seamless data, stored permanently on Arweave.",
+        "websiteLink": "https://bundlr.network/",
+        "githubRepo": "Bundlr-Network/js-sdk",
+        "primaryColor": "#000000"
+    },
+    {
+        "name": "Warp",
+        "logo": "https://avatars.githubusercontent.com/u/106585104?s=200&v=4",
+        "description": "A implementation of the SmartWeave protocol, enabling smart contracts on Arweave",
+        "websiteLink": "https://warp.cc",
+        "githubRepo": "warp-contracts/warp",
+        "primaryColor": "#5273fb"
+    },
+    {
+        "name": "WeaveDB",
+        "logo": "https://avatars.githubusercontent.com/u/115352196?s=200&v=4",
+        "description": "NoSQL Database as a Smart Contract",
+        "websiteLink": "https://weavedb.dev/",
+        "githubRepo": "weavedb/weavedb",
+        "primaryColor": "#ab1faa"
+    }
+]
