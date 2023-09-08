@@ -6,13 +6,16 @@ export default function Nav() {
   return (
     <Wrapper>
       <a href="/"><Logo src="/logo.png" width={512} height={512} /></a>
-      <Button
-        href="https://docs.arweavekit.com"
-        target="_blank"
-        rel="noopener noreferer"
-      >
-        Get Started
-      </Button>
+      <span>
+        <a href="/plug-ins">Plug Ins</a>
+        <Button
+          href="https://docs.arweavekit.com"
+          target="_blank"
+          rel="noopener noreferer"
+        >
+          Get Started
+        </Button>
+      </span>
     </Wrapper>
   );
 }
@@ -22,6 +25,16 @@ const Wrapper = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 1rem 8vw 0;
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
 `;
 
 const Logo = styled(Image).attrs({
