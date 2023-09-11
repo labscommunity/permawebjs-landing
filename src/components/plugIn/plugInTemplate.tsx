@@ -1,9 +1,8 @@
-import { useRouter } from 'next/router';
-import Nav from "../../components/Nav";
-import Head from "../../components/Head";
+import Nav from "../Nav";
+import Head from "../Head";
 import styled from "styled-components";
 import React, { useState, useEffect } from 'react';
-import plugInList from '../../components/plugIn/plugIns.json';
+import plugInList from './plugIns.json';
 import axios from 'axios';
 import { FaCodeBranch, FaClock, FaRegEye, FaLaptopCode, FaUserFriends, FaGithub, FaClipboard, FaRegAngry, FaStar, FaExternalLinkAlt } from 'react-icons/fa';
 import ReactMarkdown from 'react-markdown';
@@ -17,8 +16,7 @@ function HumanReadableDate(timestamp: any) {
   
 
 export default function Hero() {
-    const router = useRouter();
-    const packageName = router.query.package;
+    const packageName = '%%PACKAGENAME%%';
     const [githubData, setGithubData] = useState<GithubData | null>(null);
     const [readme, setReadme] = useState<string | null>(null);
     const packageData = plugInList.find(pkg => pkg.name === packageName);
