@@ -7,7 +7,7 @@ export default function Nav() {
     <Wrapper>
       <a href="/"><Logo src="/logo.png" width={512} height={512} /></a>
       <span>
-        <a href="/plug-ins">Plugins</a>
+        <a href="/plugins">Plugins</a>
         <Button
           href="https://docs.arweavekit.com"
           target="_blank"
