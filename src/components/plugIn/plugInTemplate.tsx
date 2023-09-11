@@ -41,7 +41,7 @@ export default function Hero() {
     }, [packageName, packageData]);
 
     if (!packageData) {
-        return <div>Package not found</div>;
+        return <div>Plugin not found</div>;
     }
 
     return (

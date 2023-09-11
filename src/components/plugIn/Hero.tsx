@@ -33,7 +33,7 @@ export default function Hero() {
         <Nav />
         <Content>
           <HeroContainer>
-              <Title>Powerful plug ins</Title> 
+              <Title>Powerful Plugins</Title> 
               <Subtitle>For the new web.</Subtitle>
               <SearchInput 
                   type="text" 
@@ -51,7 +51,7 @@ export default function Hero() {
               {
                   searchTerm.trim() === "" ? (
                       plugInList.map((plugin) => (
-                          <GridItem key={plugin.name} primaryColor={plugin.primaryColor} href={'/plug-ins/' + plugin.name}>
+                          <GridItem key={plugin.name} primaryColor={plugin.primaryColor} href={'/plugins/' + plugin.name}>
                               <img src={plugin.logo} alt={plugin.name} />
                               <h2>{plugin.name}</h2>
                               <p>{plugin.description}</p>
@@ -59,7 +59,7 @@ export default function Hero() {
                       ))
                   ) : result.length > 0 ? (
                       result.map((plugin) => (
-                          <GridItem key={plugin.name} primaryColor={plugin.primaryColor} href={'/plug-ins/' + plugin.name}>
+                          <GridItem key={plugin.name} primaryColor={plugin.primaryColor} href={'/plugins/' + plugin.name}>
                               <img src={plugin.logo} alt={plugin.name} />
                               <h2>{plugin.name}</h2>
                               <p>{plugin.description}</p>
