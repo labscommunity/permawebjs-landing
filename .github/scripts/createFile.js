@@ -3,7 +3,7 @@ const path = require('path');
 
 const JSON_FILE_PATH = path.join(__dirname, '../../src/components/plugIn/plugins.json');
 const TEMPLATE_PATH = path.join(__dirname, '../../src/components/plugIn/plugInTemplate.tsx');
-const OUTPUT_DIR = path.join(__dirname, '../../src/components/plugIn/pluginComponents/');
+const OUTPUT_DIR = path.join(__dirname, '../../src/pages/plugins/');
 const PREVIOUS_STATE_PATH = path.join(__dirname, '../../src/components/plugIn/pluginState.json');
 
 const currentData = JSON.parse(fs.readFileSync(JSON_FILE_PATH, 'utf8'));
