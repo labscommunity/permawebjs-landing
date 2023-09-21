@@ -5,7 +5,8 @@
         "description": "Web3 transactions with existing traditional social logins.",
         "websiteLink": "https://othent.io",
         "githubRepo": "othent/package",
-        "primaryColor": "#2375ef"
+        "primaryColor": "#2375ef",
+        "npmName": "othent"
     },
     {
         "name": "ArConnect",
@@ -13,7 +14,8 @@
         "description": "A non-custodial Arweave-native wallet with extensive features, all in your favorite browser.",
         "websiteLink": "https://arconnect.io",
         "githubRepo": "arconnectio/ArConnect",
-        "primaryColor": "#ab9aff"
+        "primaryColor": "#ab9aff",
+        "npmName": "arconnect"
     },
     {
         "name": "Redstone",
@@ -21,7 +23,8 @@
         "description": "RedStone delivers data you need at high-frequency and inherited security of the destination chain.",
         "websiteLink": "https://redstone.finance/",
         "githubRepo": "redstone-finance/redstone-oracles-monorepo",
-        "primaryColor": "#fd627a"
+        "primaryColor": "#fd627a",
+        "npmName": "redstone-sdk"
     },
     {
         "name": "Arweave-JS",
@@ -29,7 +32,8 @@
         "description": "Arweave JS is the JavaScript/TypeScript SDK for interacting with the Arweave network.",
         "websiteLink": "https://github.com/ArweaveTeam/arweave-js",
         "githubRepo": "ArweaveTeam/arweave-js",
-        "primaryColor": "#222326"
+        "primaryColor": "#222326",
+        "npmName": "arweave"
     },
     {
         "name": "Bundlr",
@@ -37,7 +41,8 @@
         "description": "Performant, scalable, and seamless data, stored permanently on Arweave.",
         "websiteLink": "https://bundlr.network/",
         "githubRepo": "Bundlr-Network/js-sdk",
-        "primaryColor": "#000000"
+        "primaryColor": "#000000",
+        "npmName": "bundlr-network/client"
     },
     {
         "name": "Warp",
@@ -45,7 +50,8 @@
         "description": "A implementation of the SmartWeave protocol, enabling smart contracts on Arweave",
         "websiteLink": "https://warp.cc",
         "githubRepo": "warp-contracts/warp",
-        "primaryColor": "#5273fb"
+        "primaryColor": "#5273fb",
+        "npmName": "warp-contracts"
     },
     {
         "name": "WeaveDB",
@@ -53,6 +59,7 @@
         "description": "NoSQL Database as a Smart Contract",
         "websiteLink": "https://weavedb.dev/",
         "githubRepo": "weavedb/weavedb",
-        "primaryColor": "#ab1faa"
+        "primaryColor": "#ab1faa",
+        "npmName": "weavedb-sdk"
     }
 ]
