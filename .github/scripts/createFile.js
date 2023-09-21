@@ -15,7 +15,7 @@ const newEntries = currentData.filter(entry =>
 );
 
 newEntries.forEach(newEntry => {
-    let content = templateContent.replace('%%PACKAGENAME%%', newEntry.name);
+    let content = templateContent.replace('%%PACKAGENAME%%', newEntry.name).replace('%%NPMNAME%%', newEntry.name);
     fs.writeFileSync(path.join(OUTPUT_DIR, `${newEntry.name}.tsx`), content, 'utf8');
     console.log(`Created new file for ${newEntry.name}`);
 });

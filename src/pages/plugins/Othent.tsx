@@ -15,6 +15,7 @@ function HumanReadableDate(timestamp: any) {
 
 export default function Hero() {
     const packageName = 'Othent';
+    const NpmName = 'othent';
     const [githubData, setGithubData] = useState<GithubData | null>(null);
     const [readme, setReadme] = useState<string | null>(null);
     const packageData = plugInList.find(pkg => pkg.name === packageName);
@@ -75,15 +76,15 @@ export default function Hero() {
                     <CodeBox>
                         <section>
                             <h4>Install the Package</h4>
-                            <pre>{`$ npm install ${packageName}`}</pre>
+                            <pre>{`$ npm install ${NpmName}`}</pre>
                         </section>
                         <section>
                             <h4>Create a Plugin</h4>
-                            <pre>{`// Plug in the whole package\n\nimport * as ${packageName}Plugin from '${packageName}'\n\nfunction MyPlugin() {\n\n  return ${packageName}Plugin\n\n}`}</pre>
+                            <pre>{`// Plug in the whole package\n\nimport * as ${NpmName}Plugin from '${NpmName}'\n\nfunction MyPlugin() {\n\n  return ${NpmName}Plugin\n\n}`}</pre>
                         </section>
                         <section>
                             <h4>Usage</h4>
-                            <pre>{`// Use a function from the Plugin\n\nimport * as ${packageName}Plugin from '${packageName}';\n\nimport { ArweaveKit } from 'arweavekit/VERSION';\n\nconst arweaveKit = ArweaveKit.use({ name: '${packageName}Plugin', plugin: ${packageName}Plugin });\n\nconsole.log(arweavekit.functionFromExternalPackage())`}</pre>
+                            <pre>{`// Use a function from the Plugin\n\nimport * as ${NpmName}Plugin from '${NpmName}';\n\nimport { ArweaveKit } from 'arweavekit/VERSION';\n\nconst arweaveKit = ArweaveKit.use({ name: '${NpmName}Plugin', plugin: ${NpmName}Plugin });\n\nconsole.log(arweavekit.functionFromExternalPackage())`}</pre>
                         </section>
                     </CodeBox>
                 </InfoContainer>
