@@ -50,7 +50,7 @@ export default function Hero() {
                             <p>{packageData.description}</p>
                             <div>
                                 <a href={packageData.websiteLink} target='_blank' rel="noopener noreferrer"><FaExternalLinkAlt /> Website</a>
-                                <a href={'https://protocolland.arweave.dev/' + packageData.name} target='_blank' rel="noopener noreferrer"><img src='/protocolLand.svg' alt='Protocol Land' /> Protocol Land</a>
+                                {/* <a href={'https://protocolland.arweave.dev/' + packageData.name} target='_blank' rel="noopener noreferrer"><img src='/protocolLand.svg' alt='Protocol Land' /> Protocol Land</a> */}
                                 <a href={'https://github.com/' + packageData.githubRepo} target='_blank' rel="noopener noreferrer"><FaGithub /> GitHub</a>
                             </div>
                         </div>

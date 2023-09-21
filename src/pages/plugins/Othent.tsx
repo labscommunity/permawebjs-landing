@@ -50,7 +50,7 @@ export default function Hero() {
                             <p>{packageData.description}</p>
                             <div>
                                 <a href={packageData.websiteLink} target='_blank' rel="noopener noreferrer"><FaExternalLinkAlt /> Website</a>
-                                <a href={'https://protocolland.arweave.dev/' + packageData.name} target='_blank' rel="noopener noreferrer"><img src='/protocolLand.svg' alt='Protocol Land' /> Protocol Land</a>
+                                {/* <a href={'https://protocolland.arweave.dev/' + packageData.name} target='_blank' rel="noopener noreferrer"><img src='/protocolLand.svg' alt='Protocol Land' /> Protocol Land</a> */}
                                 <a href={'https://github.com/' + packageData.githubRepo} target='_blank' rel="noopener noreferrer"><FaGithub /> GitHub</a>
                             </div>
                         </div>
@@ -150,8 +150,10 @@ const LogoSection = styled.div`
         max-width: 100%;
     }
     div {
-        margin: 1rem;
+        margin-left: 1rem;
         div {
+            margin-left: 0;
+            width: 100%;
             display: flex;
             margin-top: 1rem;
             gap: 1rem;
@@ -175,6 +177,12 @@ const LogoSection = styled.div`
             max-height: 150px;
         }
     }
+    @media screen and (max-width: 768px) {
+        align-items: center;
+        div {
+            justify-content: center;
+        }
+    }
 `;
 
 const StatsSection = styled.div`
@@ -184,6 +192,13 @@ const StatsSection = styled.div`
     a {
         color: black;
         text-decoration: none;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        div {
+            display: flex;
+            gap: 0.5rem;
+        }
     }
     div {
         display: flex;
