@@ -61,5 +61,14 @@
         "githubRepo": "weavedb/weavedb",
         "primaryColor": "#ab1faa",
         "npmName": "weavedb-sdk"
+    },
+    {
+        "name": "Fair-Protocol",
+        "logo": "https://arweave.net/nUkWcH-okqr-lmogXbr25KEPMbiXnyrv68qPlY6eOXo",
+        "description": "The first decentralised marketplace where open-source Artificial Intelligence (AI) model creators can monetise their work while users retain ownership and intellectual property rights of AI-generated content.",
+        "websiteLink": "https://linktr.ee/fairprotocol",
+        "githubRepo": "FAIR-Protocol/fair-protocol-sdk",
+        "primaryColor": "#1F1F26",
+        "npmName": "@fair-protocol/sdk"
     }
 ]
