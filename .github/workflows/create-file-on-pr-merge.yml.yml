@@ -17,6 +17,6 @@ jobs:
         with:
           node-version: '14'
       - name: Install dependencies
-        run: npm ci
+        run: npm i
       - name: Run Script to Create File
         run: node .github/scripts/createFile.js
