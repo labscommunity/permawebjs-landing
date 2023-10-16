@@ -2,9 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 
-console.log(process.cwd())
-
-const JSON_FILE_PATH = 'src/components/plugIn/plugins.json'
+const JSON_FILE_PATH = 'src/components/plugIn/plugIns.json'
 const TEMPLATE_PATH = 'src/components/plugIn/plugInTemplate.tsx'
 const OUTPUT_DIR = 'src/pages/plugins/'
 const PREVIOUS_STATE_PATH = 'src/components/plugIn/pluginState.json'
