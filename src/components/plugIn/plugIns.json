@@ -69,6 +69,6 @@
         "websiteLink": "https://linktr.ee/fairprotocol",
         "githubRepo": "FAIR-Protocol/fair-protocol-sdk",
         "primaryColor": "#1F1F26",
-        "npmName": "fair-protocol/sdk"
+        "npmName": "@fair-protocol/sdk"
     }
 ]
