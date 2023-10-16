@@ -4,10 +4,10 @@ const path = require('path');
 
 console.log(process.cwd())
 
-const JSON_FILE_PATH = '../../src/components/plugIn/plugins.json'
-const TEMPLATE_PATH = '../../src/components/plugIn/plugInTemplate.tsx'
-const OUTPUT_DIR = '../../src/pages/plugins/'
-const PREVIOUS_STATE_PATH = '../../src/components/plugIn/pluginState.json'
+const JSON_FILE_PATH = 'src/components/plugIn/plugins.json'
+const TEMPLATE_PATH = 'src/components/plugIn/plugInTemplate.tsx'
+const OUTPUT_DIR = 'src/pages/plugins/'
+const PREVIOUS_STATE_PATH = 'src/components/plugIn/pluginState.json'
 
 const currentData = JSON.parse(fs.readFileSync(JSON_FILE_PATH, 'utf8'));
 const previousData = JSON.parse(fs.readFileSync(PREVIOUS_STATE_PATH, 'utf8'));
