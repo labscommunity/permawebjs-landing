@@ -14,7 +14,7 @@ export default function Discord() {
         </Subtitle>
       </TitleSection>
       <Button
-        href="https://discord.gg/XG3jTcVC"
+        href="https://discord.gg/GqxX2vtwRj"
         target="_blank"
         rel="noopener noreferer"
       >
